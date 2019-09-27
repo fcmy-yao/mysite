@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}我的信息{% endblock %}
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <div class="row">
+        <div class="col-md-6" >
+            <form class="form-horizontal" action="." method="post">{% csrf_token %}
+                <div class="row">
+                    <div class="col-md-4 text-right"><span>用户名:</span></div> 
+                    <div class="col-md-8 text-left">{{user.username}}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 text-right"><span>邮箱:</span></div>
+                    <div class="col-md-8 text-left">{{user_form.email}}</div> 
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-right"><span>电话:</span></div>
+                    <div class="col-md-8 text-left">{{userprofile_form.phone}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-right"><span>个人介绍:</span></div>
+                    <div class="col-md-8 text-left">{{userinfo_form.aboutme}}</div> 
+                </div>
+                <div class="row">
+                    <input type="submit" class="btn btn-primary " value="提交">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <p>图片</p>
+        </div>
+    </div>    
+</div>
+{% endblock %}

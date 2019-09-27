@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}主页{% endblock %}
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8" style="margin-top: 0;">
+    <ul>
+    {% for blog in blogs %}
+        <li><a href="{{ blog.id }}">{{ blog.title }}</a></li> 
+    {% endfor %}
+        <img src="https://pic4.zhimg.com/v2-17fbafdb5b95cbcff27f9023c5b78722_1200x500.jpg" alt="">
+    </ul>
+    </div>
+    <div class="col-xs-6 col-md-4">
+    </div>
+</div>
+{% endblock %}
