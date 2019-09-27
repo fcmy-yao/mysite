@@ -87,7 +87,7 @@ DATABASES = {
 
         'USER': 'root',   #你的数据库用户名
 
-        'PASSWORD': 'root123', #你的数据库密码
+        
 
         'HOST': '', #你的数据库主机，留空默认为localhost
 
@@ -142,11 +142,11 @@ LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/account/login/'
 
 EMAIL_HOST = 'smtp.qq.com'
-EMAIL_HOST_USER = "874126657@qq.com"
-EMAIL_HOST_PASSWORD = "bqwjjmxpvdlubfde"
+
+
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = "874126657@qq.com"
+
 
 
 REDIS_HOST = 'localhost' 
